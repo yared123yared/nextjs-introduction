@@ -1,12 +1,14 @@
-import Navbar from '../Components/Navbar'
+import Layout from '../Components/Layout'
 const index = () => (
     <div>
 
-        <Navbar />
+        <Layout>
+            <h1>Welcome to the index page.</h1>
+        </Layout>
 
 
 
-        <h1>Welcome to the index page.</h1>
+
     </div>
 );
 
