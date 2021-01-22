@@ -2,7 +2,7 @@ import React from 'react'
 
 class Prices extends React.Component {
     state = {
-        currency: 'USD'
+        currency: 'EUR'
     }
 
 
@@ -45,12 +45,21 @@ class Prices extends React.Component {
             <ul className="list-group">
                 {list}
             </ul>
+            <br />
+            <select onChange={e => this.setState({
+                currency: e.target.value
+            })} className="form-control">
+                <option value="USD"> USD</option>
+                <option value="GBP"> GBP</option>
+                <option value="EUR"> EUR</option>
+
+            </select>
+        </dev>
 
 
 
 
-
-        </dev>)
+        )
 
     }
 }
