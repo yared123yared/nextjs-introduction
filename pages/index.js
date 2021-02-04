@@ -11,12 +11,9 @@ const index = (props) => (
 
         <Prices bpi={props.bpi.bpi} />
         {/* {props.bpi.bpi.USD.description} */}
-
-
-
-
     </div>
 );
+
 
 index.getInitialProps = async function () {
     const res = await Fetch("https://api.coindesk.com/v1/bpi/currentprice.json");
